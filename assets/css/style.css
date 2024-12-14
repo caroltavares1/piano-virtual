@@ -83,6 +83,7 @@ li.key {
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
+  outline: none;
 }
 
 li.key.white {
@@ -106,4 +107,17 @@ li.key span {
   bottom: 20px;
   width: 100%;
   text-align: center;
+}
+
+li.key.white.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(0deg #fff 0%, #eee 100%);
+}
+
+li.key.black.active {
+  background: linear-gradient(0deg #000, #434343);
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
+}
+li.key.hide span {
+  display: none;
 }
